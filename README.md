@@ -12,7 +12,7 @@ This project delves into analyzing a large-scale Instagram dataset to uncover pa
 
 ---
 
-[!InstagramAnalysis](/inst.png)
+![Instagram Analysis](/inst.png)
 
 ## 🗂️ Project Structure
 
