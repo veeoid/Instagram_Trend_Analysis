@@ -12,6 +12,8 @@ This project delves into analyzing a large-scale Instagram dataset to uncover pa
 
 ---
 
+[!InstagramAnalysis](/inst.png)
+
 ## 🗂️ Project Structure
 
 Instagram_Trend_Analysis/ 
