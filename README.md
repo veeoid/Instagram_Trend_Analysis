@@ -1,6 +1,6 @@
 # 📊 Instagram Trend Analysis
 
-This project delves into the analysis of a large-scale Instagram dataset to uncover patterns in user behavior, focusing on location-based posting trends. By leveraging both relational (PostgreSQL) and NoSQL (MongoDB) databases, the project processes and analyzes millions of Instagram posts, user profiles, and location data.
+This project delves into analyzing a large-scale Instagram dataset to uncover patterns in user behavior, focusing on location-based posting trends. By leveraging both relational (PostgreSQL) and NoSQL (MongoDB) databases, the project processes and analyzes millions of Instagram posts, user profiles, and location data.
 
 ---
 
@@ -74,7 +74,7 @@ Instagram_Trend_Analysis/
 2. **Set Up Databases**:
 
 PostgreSQL:
-  Execute cleaning.sql to create and populate the necessary tables.
+  Execute `cleaning.sql` to create and populate the necessary tables.
 MongoDB:
   Import data into MongoDB collections as required.
 
