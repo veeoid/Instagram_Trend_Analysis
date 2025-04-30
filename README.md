@@ -79,11 +79,11 @@ MongoDB:
   Import data into MongoDB collections as required.
 
 3. **Run Analysis Scripts**:
-  For relational database analysis:
+  - For relational database analysis:
   ```
   python relational.py
   ```
-  For MongoDB Analysis:
+  - For MongoDB Analysis:
   ```
   python mongo_itemset_mining.py
   ```
