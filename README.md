@@ -1,88 +1,89 @@
-**Title: Instagram Data Analysis and Frequent Itemset Mining**
+# 📊 Instagram Trend Analysis
 
-**
-Project Description:**
-This project focuses on analyzing a large-scale Instagram dataset to uncover patterns in user behavior, particularly related to location-based posting. The project utilizes both relational (PostgreSQL) and NoSQL (MongoDB) databases to process and analyze millions of Instagram posts, user profiles, and location data.
+This project delves into the analysis of a large-scale Instagram dataset to uncover patterns in user behavior, focusing on location-based posting trends. By leveraging both relational (PostgreSQL) and NoSQL (MongoDB) databases, the project processes and analyzes millions of Instagram posts, user profiles, and location data.
 
+---
 
-**Key Components:**
+## 🧰 Tech Stack
 
+- **Databases**: PostgreSQL, MongoDB
+- **Languages**: SQL, Python
+- **Libraries**: pandas, pymongo, itertools
 
-**Data Cleaning and Preparation:**
+---
 
-The project starts with cleaning and structuring raw data into normalized tables in PostgreSQL.
+## 🗂️ Project Structure
 
-Tables include Addresses, Locations, Profiles, and Posts, ensuring data integrity and reducing redundancy.
-
-
-
-
-**Data Processing:**
-
-Large datasets are handled efficiently, with options to create smaller subsets for testing and analysis.
-
-
+Instagram_Trend_Analysis/ 
+├── cleaning.sql # SQL script for data cleaning and normalization 
+├── relational.py # Python script for relational database operations 
+├── relational_itemset_mining.sql # SQL script for frequent itemset mining in PostgreSQL 
+├── mongo_itemset_mining.py # Python script for frequent itemset mining in MongoDB 
+└── README.md # Project documentation
 
 
-**Frequent Itemset Mining:**
+---
 
-The core of the project involves implementing frequent itemset mining algorithms.
+## 🔍 Key Components
 
-This process identifies frequently co-occurring locations in user posts.
+### 1. Data Cleaning and Preparation
 
-The analysis is performed using both SQL (in PostgreSQL) and NoSQL (in MongoDB) approaches, allowing for performance comparison.
+- **Objective**: Normalize and structure raw Instagram data for efficient analysis.
+- **Process**:
+  - Utilize `cleaning.sql` to transform raw data into structured tables: `Addresses`, `Locations`, `Profiles`, and `Posts`.
+  - Ensure data integrity and reduce redundancy through normalization.
 
+### 2. Data Processing
 
+- **Objective**: Handle large datasets efficiently.
+- **Process**:
+  - Implement scripts to process and analyze large volumes of data.
+  - Create smaller subsets for testing and analysis without compromising performance.
 
+### 3. Frequent Itemset Mining
 
-**Scalability and Performance:
-**
-The project is designed to handle millions of records, demonstrating its capability to work with big data.
+- **Objective**: Identify frequently co-occurring locations in user posts.
+- **Process**:
+  - Apply frequent itemset mining algorithms using both SQL and Python.
+  - Analyze patterns to uncover trends in location-based posting behavior.
 
-It includes mechanisms to manage memory constraints and optimize query performance.
+---
 
+## 📊 Sample Output
 
+*Note: Replace this section with actual visualizations or findings from your analysis.*
 
+---
 
-**Multi-Database Approach:**
+## 🚀 Getting Started
 
-By using both PostgreSQL and MongoDB, the project showcases the strengths of relational and document-based databases in handling complex data analysis tasks.
+### Prerequisites
 
+- PostgreSQL installed and configured
+- MongoDB installed and configured
+- Python 3.x installed
+- Required Python libraries installed (`pandas`, `pymongo`, etc.)
 
+### Steps
 
+1. **Clone the Repository**:
+```
+   git clone https://github.com/veeoid/Instagram_Trend_Analysis.git
+   cd Instagram_Trend_Analysis
+```
+2. **Set Up Databases**:
 
-**Iterative Analysis:**
+PostgreSQL:
+  Execute cleaning.sql to create and populate the necessary tables.
+MongoDB:
+  Import data into MongoDB collections as required.
 
-The itemset mining process is iterative, starting from single locations (L1) and progressing to more complex location combinations.
-
-This allows for the discovery of increasingly sophisticated patterns in user posting behavior.
-
-
-
-
-**Configurable Parameters:**
-
-The analysis includes configurable thresholds (e.g., minimum frequency counts) to adjust the sensitivity of pattern detection.
-
-
-
-
-**Result Interpretation:**
-
-The project provides insights into popular location combinations, potentially revealing trends in user travel patterns or location preferences.
-
-
-
-
-**Potential Applications:**
-
-Marketing and Advertising: Identifying popular location combinations for targeted campaigns.
-
-Urban Planning: Understanding patterns in location-based social media activity.
-
-Tourism Industry: Discovering trendy location combinations among Instagram users.
-
-Social Behavior Analysis: Studying how users interact with different locations on social media.
-
-
-This project demonstrates the application of big data techniques, database management, and data mining algorithms to extract meaningful insights from social media data, showcasing the power of combining different database technologies for complex data analysis tasks.
+3. **Run Analysis Scripts**:
+  For relational database analysis:
+  ```
+  python relational.py
+  ```
+  For MongoDB Analysis:
+  ```
+  python mongo_itemset_mining.py
+  ```
